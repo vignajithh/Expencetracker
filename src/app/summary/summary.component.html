@@ -1,0 +1,20 @@
+<div class="d-flex justify-content-center gap-3 my-3">
+    <div class=" col-4 alert alert-success border p-3 shadow">
+        <h2>Total income:{{totalIncome}}</h2></div>
+    <div class="col-4 alert alert-danger border p-3 shadow">
+        <div ><h2>Total expence:{{totalExpence}}</h2></div>
+</div>
+</div>
+
+<div class="container">
+    <div class="d-flex d-flex justify-content-around my-3">
+        <div *ngFor="let catsum of summary" class="border p-2 alert alert-dark">
+            {{catsum.category}} {{catsum.total}}
+        </div>
+    </div>
+</div>
+
+<div>
+    <canvas id="myChart"></canvas>
+  </div>
+
